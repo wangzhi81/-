@@ -1,0 +1,83 @@
+span{
+    padding-left:2px;
+    padding-right:2px;
+}
+.logotd{
+    width:50px;height:50px;background-color:#0087B4
+}
+.kuai1{
+    color:#FFF;padding:15px;border-left-width: 1px;border-left-style: solid;border-right-width: 1px;border-right-style: solid;border-color:#0087B4;
+    cursor:pointer;
+}
+.kuai1select{
+    padding:15px;border-left-width: 1px;border-left-style: solid;border-right-width: 1px;border-right-style: solid;border-color:#FFF;
+    cursor:pointer;
+    background-color:#FFF;
+    color:#000;
+}
+.kuai1:hover{
+    background:#008fbf;
+}
+.kuai1 td{
+    white-space: nowrap
+}
+.kuai1select td{
+    white-space: nowrap
+}
+.kuai2{
+    color:#FFF;padding:5px;border-left-width: 1px;border-left-style: solid;border-right-width: 1px;border-right-style: solid;border-color:#0087B4;
+    font-size: 16px;font-weight: bold;
+}
+.badge{
+    margin-left: 5px;background-color:#0087B4;color:#FFF;font-weight:normal
+}
+.caidan1{
+    background-color:#394555;text-align:center;padding:5px
+}
+.caidan1 span{
+    color:#AEB9C2;cursor:pointer;
+}
+.caidan2{
+    background-color:#394555;color:#AEB9C2;
+}
+.caidan3{
+    background-color:#22282E;padding:5px 10px 5px 20px;color:#FFF;cursor:pointer;
+}
+.caidan3:hover{
+    background-color:#414D5C;
+}
+.caidan4{
+    background-color:#293038;padding:10px 10px 10px 20px;color:#FFF;cursor:pointer;
+}
+.caidan4:hover{
+    background-color:#414D5C;
+}
+.caidan4selected{
+    background-color:#09c;
+}
+.caidan4selected:hover{
+    background-color:#09c;
+}
+.caidan4selected .glyphicon{
+    color:#FFF;
+}
+.tubiao{
+    font-size:12px;color:#AEB9C2;
+}
+#yonghull{
+    position:absolute;
+    top:50px;
+    left:10px;
+    background-color:#FFF;
+    padding:10px;
+    border:1px solid #ccc;
+    display:none;
+    font-size:12px;
+    cursor:pointer;
+}
+#yonghull:hover{
+    background-color:#EEE;
+}
+#biaoti{
+    cursor:pointer;
+}

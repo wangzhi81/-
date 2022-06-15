@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/loading.css?v=0.3" />
+        <link rel="stylesheet" type="text/css" href="/static/css/businesslist.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/weixin/bottom/xiadan.css" />
+        <title>宽带安装</title>
+    </head>
+    
+    <body>
+        <div style="padding:10px">
+            <table width="100%">
+                <tr>
+                    {volist name="business_set_meals" id="vo"}
+                        <td align="center" class="td1" set_name="{$vo.set_name}">
+                            <div id="{$vo.BUSINESS_SET_MEAL_ID}" class="business_set_meal">
+                                <table>
+                                    <tr>
+                                        <td valign="middle"><img class="imgfxk" src="/static/img/ico/fxk.png" style="width:20px"></td>
+                                        <td style="width:5px"></td>
+                                        <td valign="middle">{$vo.set_name}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    {/volist}
+                </tr>
+                <tr>
+                    {volist name="business_set_meals2" id="vo"}
+                        <td align="center" class="td1" set_name="{$vo.set_name}">
+                            <div id="{$vo.BUSINESS_SET_MEAL_ID}" class="business_set_meal">
+                                <table>
+                                    <tr>
+                                        <td valign="middle"><img class="imgfxk" src="/static/img/ico/fxk.png" style="width:20px"></td>
+                                        <td style="width:5px"></td>
+                                        <td valign="middle">{$vo.set_name}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    {/volist}
+                </tr>
+            </table>
+            <div id="tcsm" class="tcsm">
+                {$package_description}
+            </div>
+            <div style="height:10px"></div>
+            <table width="100%" class="table1">
+                <tr>
+                    <td>手机号：</td><td><input style="text" class="form-control" id="phone_number"></td>
+                </tr>
+                <tr><td style="height:5px"></td></tr>
+                <tr>
+                    <td>姓名：</td><td><input style="text" class="form-control" id="full_name"></td>
+                </tr>
+                <tr><td style="height:5px"></td></tr>
+                <tr>
+                    <td>地址：</td><td><input style="text" class="form-control" id="address"></td>
+                </tr>
+            </table>
+            
+            <div style="padding:5px">
+                <button type="button" class="btn btn-success btn-lg btn-block" id="tijiao">提交</button>
+            </div>
+        </div>
+        <input type="hidden" value="{$openid}" id="openid">
+        <input type="hidden" value="{$the_underlying_business_id}" id="the_underlying_business_id">
+        
+        <script data-main="/static/js/weixin/Bottom/xiadan.js?v=7" src="/static/js/require.min.js"></script>
+    </body>
+</html>

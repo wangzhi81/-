@@ -1,0 +1,35 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Deshanginformation">
+        <tr>
+            <td>商户名称：</td>
+            <td><input type="text" id="name_of_the_merchant" value=""></td>
+        </tr><tr>
+            <td>联系电话：</td>
+            <td><input type="text" id="contact_number" value=""></td>
+        </tr><tr>
+            <td>商户地址：</td>
+            <td><input type="text" id="business_address" value=""></td>
+        </tr><tr>
+            <td>商户照片：</td>
+            <td>
+                <input type="hidden" id="merchant_photos" value="">
+                <div id="shangchuan">
+                    <div class="uploaddiv" id="shangchuan_div">
+                        <table width="100%">
+                            <tr><td align="center" style="height:90px;font-size:26px">+</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td><input type="text" id="display_order" value=""></td>
+        </tr>
+    </table>
+    <div style="display:none">
+        <input type="file" id="shangchuan_file" accept="image/*">
+    </div>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveData">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

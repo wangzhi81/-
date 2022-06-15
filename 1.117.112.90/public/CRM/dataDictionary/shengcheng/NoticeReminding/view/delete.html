@@ -1,0 +1,36 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Noticereminding">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="NOTICE_REMINDING_ID" value="{$NoticeReminding.NOTICE_REMINDING_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>被通知人openid：</td>
+            <td>{$NoticeReminding.notified_openid}</td>
+        </tr><tr>
+            <td>通知时间：</td>
+            <td>{$NoticeReminding.notification_time}</td>
+        </tr><tr>
+            <td>通知类型：</td>
+            <td>{$NoticeReminding.notification_type}</td>
+        </tr><tr>
+            <td>通知内容：</td>
+            <td>{$NoticeReminding.notification_content}</td>
+        </tr><tr>
+            <td>通知状态：</td>
+            <td>{$NoticeReminding.notification_status}</td>
+        </tr><tr>
+            <td>读取时间：</td>
+            <td>{$NoticeReminding.read_time}</td>
+        </tr><tr>
+            <td>提醒时间：</td>
+            <td>{$NoticeReminding.reminding_time}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

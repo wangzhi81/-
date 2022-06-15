@@ -1,0 +1,33 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Broadbandinstallationresources">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="BROADBAND_INSTALLATION_RESOURCES_ID" value="{$BroadbandInstallationResources.BROADBAND_INSTALLATION_RESOURCES_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>区域：</td>
+            <td>{$BroadbandInstallationResources.region}</td>
+        </tr><tr>
+            <td>街道：</td>
+            <td>{$BroadbandInstallationResources.street}</td>
+        </tr><tr>
+            <td>路巷村：</td>
+            <td>{$BroadbandInstallationResources.lane_village}</td>
+        </tr><tr>
+            <td>小区：</td>
+            <td>{$BroadbandInstallationResources.residential_quarters}</td>
+        </tr><tr>
+            <td>街路名：</td>
+            <td>{$BroadbandInstallationResources.street_name}</td>
+        </tr><tr>
+            <td>楼编号：</td>
+            <td>{$BroadbandInstallationResources.building_number}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

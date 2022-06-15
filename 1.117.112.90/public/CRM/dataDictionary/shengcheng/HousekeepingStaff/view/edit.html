@@ -1,0 +1,35 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Housekeepingstaff">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="HOUSEKEEPING_STAFF_ID" value="{$HousekeepingStaff.HOUSEKEEPING_STAFF_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" id="full_name" value="{$HousekeepingStaff.full_name}"></td>
+        </tr><tr>
+            <td>服务类别：</td>
+            <td><input type="text" id="service_category" value="{$HousekeepingStaff.service_category}"></td>
+        </tr><tr>
+            <td>年龄：</td>
+            <td><input type="text" id="age" value="{$HousekeepingStaff.age}"></td>
+        </tr><tr>
+            <td>星等：</td>
+            <td><input type="text" id="the_magnitude" value="{$HousekeepingStaff.the_magnitude}"></td>
+        </tr><tr>
+            <td>服务次数：</td>
+            <td><input type="text" id="service_times" value="{$HousekeepingStaff.service_times}"></td>
+        </tr><tr>
+            <td>注册时间：</td>
+            <td><input type="text" id="registration_time" value="{$HousekeepingStaff.registration_time}"></td>
+        </tr><tr>
+            <td>头像：</td>
+            <td><input type="text" id="head_portrait" value="{$HousekeepingStaff.head_portrait}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

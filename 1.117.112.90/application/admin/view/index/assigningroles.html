@@ -1,0 +1,24 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="NoBorder" id="menu_list">
+        <tr>
+            <td>
+                菜单名称：</td><td>{$MenuList.MENU_NAME}
+                <input type="hidden" id="MENU_LIST_ID" value="{$MenuList.MENU_LIST_ID}">
+            </td>
+        </tr>
+        <tr><td>菜单图标：</td><td>{$MenuList.MENU_ICON}</td></tr>
+        <tr>
+            <td>分配角色：</td>
+            <td>
+                <table>
+                    <tr id="user_rights_allocation_table">
+                        
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveData">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

@@ -1,0 +1,29 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Broadbandperformance">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="BROADBAND_PERFORMANCE_ID" value="{$BroadbandPerformance.BROADBAND_PERFORMANCE_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>openid：</td>
+            <td><input type="text" id="openid" value="{$BroadbandPerformance.openid}"></td>
+        </tr><tr>
+            <td>业绩：</td>
+            <td><input type="text" id="achievement" value="{$BroadbandPerformance.achievement}"></td>
+        </tr><tr>
+            <td>业绩类别：</td>
+            <td><input type="text" id="performance_category" value="{$BroadbandPerformance.performance_category}"></td>
+        </tr><tr>
+            <td>绩效时间：</td>
+            <td><input type="text" id="performance_time" value="{$BroadbandPerformance.performance_time}"></td>
+        </tr><tr>
+            <td>订单ID：</td>
+            <td><input type="text" id="order_id" value="{$BroadbandPerformance.order_id}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

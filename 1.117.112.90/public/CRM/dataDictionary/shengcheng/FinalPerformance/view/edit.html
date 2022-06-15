@@ -1,0 +1,29 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Finalperformance">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="FINAL_PERFORMANCE_ID" value="{$FinalPerformance.FINAL_PERFORMANCE_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>年月标识：</td>
+            <td><input type="text" id="sign_of_year_and_month" value="{$FinalPerformance.sign_of_year_and_month}"></td>
+        </tr><tr>
+            <td>openid：</td>
+            <td><input type="text" id="openid" value="{$FinalPerformance.openid}"></td>
+        </tr><tr>
+            <td>户数：</td>
+            <td><input type="text" id="households" value="{$FinalPerformance.households}"></td>
+        </tr><tr>
+            <td>计算说明：</td>
+            <td><input type="text" id="calculation_explanation" value="{$FinalPerformance.calculation_explanation}"></td>
+        </tr><tr>
+            <td>最终业绩：</td>
+            <td><input type="text" id="final_performance" value="{$FinalPerformance.final_performance}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

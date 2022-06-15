@@ -1,0 +1,21 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Userrightsallocationtable">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="USER_RIGHTS_ALLOCATION_TABLE_ID" value="{$UserRightsAllocationTable.USER_RIGHTS_ALLOCATION_TABLE_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>角色：</td>
+            <td>{$UserRightsAllocationTable.role}</td>
+        </tr><tr>
+            <td>菜单ID：</td>
+            <td>{$UserRightsAllocationTable.menu_id}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

@@ -1,0 +1,29 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Merchantorder">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="MERCHANT_ORDER_ID" value="{$MerchantOrder.MERCHANT_ORDER_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>手机号码：</td>
+            <td><input type="text" id="phone_number" value="{$MerchantOrder.phone_number}"></td>
+        </tr><tr>
+            <td>姓名：</td>
+            <td><input type="text" id="full_name" value="{$MerchantOrder.full_name}"></td>
+        </tr><tr>
+            <td>地址：</td>
+            <td><input type="text" id="address" value="{$MerchantOrder.address}"></td>
+        </tr><tr>
+            <td>openid：</td>
+            <td><input type="text" id="openid" value="{$MerchantOrder.openid}"></td>
+        </tr><tr>
+            <td>下单时间：</td>
+            <td><input type="text" id="order_time" value="{$MerchantOrder.order_time}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

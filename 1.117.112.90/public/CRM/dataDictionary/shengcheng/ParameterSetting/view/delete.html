@@ -1,0 +1,27 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Parametersetting">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="PARAMETER_SETTING_ID" value="{$ParameterSetting.PARAMETER_SETTING_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>参数名称：</td>
+            <td>{$ParameterSetting.parameter_name}</td>
+        </tr><tr>
+            <td>参数值：</td>
+            <td>{$ParameterSetting.parameter_values}</td>
+        </tr><tr>
+            <td>参数说明：</td>
+            <td>{$ParameterSetting.parameter_description}</td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td>{$ParameterSetting.display_order}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

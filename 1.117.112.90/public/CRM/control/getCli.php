@@ -1,0 +1,4 @@
+<?php
+    require_once dirname(__FILE__) .'/pdo.php';
+    $CURRENT_LOCATION_INFORMATION = getOne("select CURRENT_LOCATION_INFORMATION from DEVICE_LIST where DEVICE_ID='561118010016494'");
+    echo $CURRENT_LOCATION_INFORMATION;

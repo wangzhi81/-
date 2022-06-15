@@ -1,0 +1,35 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Broadbandorders">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="BROADBAND_ORDERS_ID" value="{$BroadbandOrders.BROADBAND_ORDERS_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>主号姓名：</td>
+            <td><input type="text" id="master_name" value="{$BroadbandOrders.master_name}"></td>
+        </tr><tr>
+            <td>手机号码：</td>
+            <td><input type="text" id="phone_number" value="{$BroadbandOrders.phone_number}"></td>
+        </tr><tr>
+            <td>接入地址：</td>
+            <td><input type="text" id="access_address" value="{$BroadbandOrders.access_address}"></td>
+        </tr><tr>
+            <td>套餐名称：</td>
+            <td><input type="text" id="package_name" value="{$BroadbandOrders.package_name}"></td>
+        </tr><tr>
+            <td>身份证正面：</td>
+            <td><input type="text" id="front_of_id_card" value="{$BroadbandOrders.front_of_id_card}"></td>
+        </tr><tr>
+            <td>身份证反面：</td>
+            <td><input type="text" id="reverse_of_id_card" value="{$BroadbandOrders.reverse_of_id_card}"></td>
+        </tr><tr>
+            <td>备注：</td>
+            <td><input type="text" id="remarks" value="{$BroadbandOrders.remarks}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

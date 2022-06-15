@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css?v=0.1" />
+        <link rel="stylesheet" type="text/css" href="/static/css/loading.css?v=0.3" />
+        <link rel="stylesheet" type="text/css" href="/static/css/weixin/PerformanceEnquiry.css?v=12" />
+        <title>业绩查询</title>
+    </head>
+    <body>
+        <div class="QueryCriteria">
+            <table width="100%">
+                <tr>
+                    <td><input type="month" class="form-control" id="sign_of_year_and_month"></td>
+                    <td align="right"><button type="button" class="btn btn-primary" id="Query">查询</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="Results" id="Results">
+            
+        </div>
+        <div id="QueryResults" class="QueryResults"></div>
+        <div class="buttonDiv" style="display:none">
+            <button type="button" class="btn btn-primary btn-block" id="PerformanceDetails">查看明细</button>
+        </div>
+        <script data-main="/static/js/weixin/PerformanceEnquiry.js?v=4" src="/static/js/require.min.js"></script>
+    </body>
+</html>

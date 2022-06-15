@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title></title>
+        <style>
+            table {
+                border-collapse: collapse;margin-top: 5px;
+            }
+            table, td, th {
+                border: 1px solid black;padding: 5px;
+            }
+            h{margin:5px;}
+        </style>
+    </head>
+    
+    <body>
+        {volist name="entity" id="vo"}
+            <h>&nbsp;{$vo.ENTITY_CODE}&nbsp;{$vo.ENTITY_NAME}数据</h><br>
+            <table>
+                <tr>
+                    <th>编号</th><th>数据项名</th><th>中文简介</th><th>类型</th><th>长度</th><th>约束</th><th>备注</th>
+                </tr>
+                <tr>
+                    <td>01</td><td>id</td><td>{$vo.ENTITY_NAME}ID</td><td>varchar</td><td>50</td><td>M</td><td></td>
+                </tr>
+            {volist name="vo.attribute" id="vo2"}
+                <tr>
+                    <td>{$vo2.SerialNumber}</td><td>{$vo2.FIELD_CODE}</td><td>{$vo2.FIELD_NAME}</td><td>{$vo2.DATA_TYPE}</td><td>{$vo2.DATA_LENGTH}</td><td></td><td>{$vo2.NOTES}</td>
+                </tr>
+            {/volist}
+            </table><br>
+        {/volist}
+    </body>
+</html>

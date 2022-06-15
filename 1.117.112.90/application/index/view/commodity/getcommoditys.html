@@ -1,0 +1,21 @@
+{volist name="commodity_managements" id="vo"}
+        <div style="height:10px;background-color:#ddd;"></div>
+        <div style="padding:10px">
+            <table width="100%">
+                <tr>
+                    <td style="width:80px;height:80px" valign="middle" align="center">
+                        <img src="{$vo.commodity_pictures}" class="img-responsive" style="width:70px;height:70px">
+                    </td>
+                    <td valign="top">
+                        <div style="padding:10px;height:60px">
+                            <div>{$vo.trade_name}</div>
+                            <div>单价：{$vo.unit_price}</div>
+                        </div>
+                        <div style="height:20px;text-align:right">
+                            <a href="/index/Commodity/edit/id/{$vo.COMMODITY_MANAGEMENT_ID}">修改</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+{/volist}

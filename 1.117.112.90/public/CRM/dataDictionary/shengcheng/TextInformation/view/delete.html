@@ -1,0 +1,33 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Textinformation">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="TEXT_INFORMATION_ID" value="{$TextInformation.TEXT_INFORMATION_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>文本标题：</td>
+            <td>{$TextInformation.text_title}</td>
+        </tr><tr>
+            <td>文本内容：</td>
+            <td>{$TextInformation.text_content}</td>
+        </tr><tr>
+            <td>更新时间_：</td>
+            <td>{$TextInformation.update_time__}</td>
+        </tr><tr>
+            <td>创建时间：</td>
+            <td>{$TextInformation.creation_time}</td>
+        </tr><tr>
+            <td>最后操作人：</td>
+            <td>{$TextInformation.last_operator}</td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td>{$TextInformation.display_order}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

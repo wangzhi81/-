@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/loading.css?v=0.3" />
+        <link rel="stylesheet" type="text/css" href="/static/css/businesslist.css" />
+        <title>底商开发专属二维码</title>
+    </head>
+    
+    <body>
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <img src="{$qrcodeurl}" style="width:300px">
+                </td>
+            </tr>
+        </table>
+        <div style="padding:10px">
+            <button type="button" class="btn btn-success btn-lg btn-block" style="display:none" id="guanbi">关闭</button>
+        </div>
+        <script data-main="/static/js/weixin/Bottom.js?v=2" src="/static/js/require.min.js"></script>
+    </body>
+</html>

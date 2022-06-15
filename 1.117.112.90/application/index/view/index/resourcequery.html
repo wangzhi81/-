@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css?v=0.1" />
+        <link rel="stylesheet" type="text/css" href="/static/css/loading.css?v=0.3" />
+        <link rel="stylesheet" type="text/css" href="/static/css/weixin/registration.css?v=0.9" />
+        <title>资源查询</title>
+    </head>
+    <body>
+        <div class="MainDiv" id="MainDiv">
+            <table width="100%">
+                <tr>
+                    <td><input type="text" class="form-control" placeholder="请输入地址" id="address"></td>
+                    <td style="width:70px" class="text-center"><button type="button" class="btn btn-primary" id="Query">查询</button></td>
+                </tr>
+            </table>
+            <div id="QueryResults" class="QueryResults">
+            </div>
+        </div>
+        <script data-main="/static/js/weixin/ResourceQuery.js?v=0.12" src="/static/js/require.min.js"></script>
+    </body>
+</html>

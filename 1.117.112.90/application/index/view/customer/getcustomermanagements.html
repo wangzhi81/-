@@ -1,0 +1,22 @@
+{volist name="CustomerManagements" id="vo"}
+        <div style="height:10px;background-color:#ddd;"></div>
+        <div style="padding:10px">
+            <table width="100%">
+                <tr>
+                    <td style="width:80px;height:80px" valign="middle" align="center">
+                        <img src="{$vo.photo}" class="img-responsive" style="width:70px;height:70px">
+                    </td>
+                    <td valign="top">
+                        <div style="padding:10px;height:60px">
+                            {$vo.full_name}<br>
+                            {$vo.mobile_phone}<br>
+                            {$vo.shipping_address}
+                        </div>
+                        <div style="height:20px;text-align:right">
+                            <a href="/index/Customer/edit/id/{$vo.CUSTOMER_MANAGEMENT_ID}">修改</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+{/volist}

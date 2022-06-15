@@ -1,0 +1,10 @@
+{
+    "require": {
+        "qcloud/cos-sdk-v5": ">=2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "topthink/think-installer": true
+        }
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>松木岛化工园区环境监控预警系统</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="smd.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/mf.ico" type="image/x-icon" />
+    <style type="text/css">
+        body{
+            font-family:'微软雅黑' !important;
+        }
+        
+     </style>
+  </head>
+  <body>
+    <table width="100%" style="background-color:#09C">
+        <tr>
+            <td class="logotd" align="center">
+                <img src="../img/huanbao2.png" width="20px">
+            </td>
+            <td class="kuai2" id="biaoti">
+                松木岛化工园区环境监控预警系统
+            </td>
+            
+            <td class="kuai1" style="width:50px">
+                <table>
+                    <tr>
+                        <td><span class="glyphicon glyphicon-envelope"></span></td>
+                        <td><span class="badge" style="background-color:#ff9900">4</span></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="kuai kuai1" style="width:100px">
+                <table>
+                    <tr>
+                        <td><span>帮助与文档</span></td>
+                        <td><span class="glyphicon glyphicon-chevron-down chevron" style="font-size:12px"></span></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="yonghuxx" class="kuai kuai1" style="width:100px">
+                <table>
+                    <tr>
+                        <td><span id="username"></span></td>
+                        <td><span class="glyphicon glyphicon-chevron-down chevron" style="font-size:12px"></span></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%">
+        <tr>
+            <td id="caidantd" style="width:180px">
+                <div class="caidan1">
+                    <span id="caidanan" class="glyphicon glyphicon-align-justify"></span>
+                </div>
+                <div class="caidan2">
+                    <div class="caidankuai">
+                        <div class="caidan3">
+                            <table width="100%">
+                                <tr>
+                                    <td style="padding:5px 0px">
+                                        <span class="glyphicon glyphicon-chevron-down chevron" style="font-size:10px;font-weight:normal"></span>
+                                        <span class="wemzi" style="font-size:12px">应急日常管理</span>
+                                    </td>
+                                    <td align="right">
+                                        <span class="glyphicon glyphicon-cog wemzi" style="color:#AEB9C2"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="caidan4" id="wxy">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">危险源管理</span>
+                        </div>
+                        <div class="caidan4" id="yjbz">
+                            <span class="glyphicon glyphicon-book tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">应急保障</span>
+                        </div>
+                        <div class="caidan4" id="yjya">
+                            <span class="glyphicon glyphicon-book tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">应急预案</span>
+                        </div>
+                        <div class="caidan4" id="zsk">
+                            <span class="glyphicon glyphicon-book tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">知识库</span>
+                        </div>
+                    </div>
+                    <div class="caidankuai">
+                        <div class="caidan3">
+                            <table width="100%">
+                                <tr>
+                                    <td style="padding:5px 0px">
+                                        <span class="glyphicon glyphicon-chevron-down chevron" style="font-size:10px;font-weight:normal"></span>
+                                        <span class="wemzi" style="font-size:12px">值守防范</span>
+                                    </td>
+                                    <td align="right">
+                                        <span class="glyphicon glyphicon-cog wemzi" style="color:#AEB9C2"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="caidan4" id="zsff">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">值守防范</span>
+                        </div>
+                    </div>
+                    <div class="caidankuai">
+                        <div class="caidan3">
+                            <table width="100%">
+                                <tr>
+                                    <td style="padding:5px 0px">
+                                        <span class="glyphicon glyphicon-chevron-down chevron" style="font-size:10px;font-weight:normal"></span>
+                                        <span class="wemzi" style="font-size:12px">应急响应指挥</span>
+                                    </td>
+                                    <td align="right">
+                                        <span class="glyphicon glyphicon-cog wemzi" style="color:#AEB9C2"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="caidan4" id="sjgl">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">事件管理</span>
+                        </div>
+                        <div class="caidan4" id="fzzh">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">辅助指挥</span>
+                        </div>
+                        <div class="caidan4" id="jczc">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">决策支持</span>
+                        </div>
+                        <div class="caidan4" id="ddgk">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">调度管控</span>
+                        </div>
+                    </div>
+                    <div class="caidankuai">
+                        <div class="caidan3">
+                            <table width="100%">
+                                <tr>
+                                    <td style="padding:5px 0px">
+                                        <span class="glyphicon glyphicon-chevron-down chevron" style="font-size:10px;font-weight:normal"></span>
+                                        <span class="wemzi" style="font-size:12px">地理信息</span>
+                                    </td>
+                                    <td align="right">
+                                        <span class="glyphicon glyphicon-cog wemzi" style="color:#AEB9C2"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="caidan4" id="dlxx">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">地理信息</span>
+                        </div>
+                    </div>
+                    <div class="caidankuai">
+                        <div class="caidan3">
+                            <table width="100%">
+                                <tr>
+                                    <td style="padding:5px 0px">
+                                        <span class="glyphicon glyphicon-chevron-down chevron" style="font-size:10px;font-weight:normal"></span>
+                                        <span class="wemzi" style="font-size:12px">基础业务支撑</span>
+                                    </td>
+                                    <td align="right">
+                                        <span class="glyphicon glyphicon-cog wemzi" style="color:#AEB9C2"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="caidan4" id="ggwf">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">公共服务</span>
+                        </div>
+                        <div class="caidan4" id="sjhj">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">数据汇聚</span>
+                        </div>
+                        <div class="caidan4" id="zcgx">
+                            <span class="glyphicon glyphicon-th-list tubiao"></span>
+                            <span class="wemzi" style="margin-left:10px">支撑共享</span>
+                        </div>
+                    </div>
+                    <div class="caidankuai" id="Systemsettings">
+                        
+                    </div>
+                </div>
+            </td>
+            <td valign="top">
+                <iframe id="mainfram" src="smd/home.php" width="100%" frameborder="0">
+                    
+                </iframe>
+            </td>
+        </tr>
+    </table>
+    <div id="yonghull" class="zhankai">
+        <table width="100%">
+            <tr>
+                <td id="tuichu">退出</td>
+            </tr>
+        </table>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="smd.js?v=0.5"></script>
+  </body>
+</html>

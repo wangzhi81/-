@@ -1,0 +1,39 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Broadbandpackage">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="BROADBAND_PACKAGE_ID" value="{$BroadbandPackage.BROADBAND_PACKAGE_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>套餐分类：</td>
+            <td>
+                <select id="package_classification" val="{$BroadbandPackage.package_classification}">
+                    
+                </select>
+            </td>
+        </tr><tr>
+            <td>套餐名称：</td>
+            <td><input type="text" id="package_name" value="{$BroadbandPackage.package_name}"></td>
+        </tr><tr>
+            <td>个人绩效：</td>
+            <td><input type="text" id="personal_performance" value="{$BroadbandPackage.personal_performance}"></td>
+        </tr><tr>
+            <td>渠道1绩效：</td>
+            <td><input type="text" id="channel_1_performance" value="{$BroadbandPackage.channel_1_performance}"></td>
+        </tr><tr>
+            <td>渠道2绩效：</td>
+            <td><input type="text" id="channel_2_performance" value="{$BroadbandPackage.channel_2_performance}"></td>
+        </tr><tr>
+            <td>支付金额：</td>
+            <td><input type="text" id="amount_of_payment" value="{$BroadbandPackage.amount_of_payment}"></td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td><input type="text" id="display_order" value="{$BroadbandPackage.display_order}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

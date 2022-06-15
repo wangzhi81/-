@@ -1,0 +1,27 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Tlearningplandetails">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="T_LEARNING_PLAN_DETAILS_ID" value="{$TLearningPlanDetails.T_LEARNING_PLAN_DETAILS_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>学习计划ID：</td>
+            <td>{$TLearningPlanDetails.learning_plan_id}</td>
+        </tr><tr>
+            <td>课程ID：</td>
+            <td>{$TLearningPlanDetails.course_id}</td>
+        </tr><tr>
+            <td>学习目标：</td>
+            <td>{$TLearningPlanDetails.learning_objectives}</td>
+        </tr><tr>
+            <td>进度安排：</td>
+            <td>{$TLearningPlanDetails.schedule}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

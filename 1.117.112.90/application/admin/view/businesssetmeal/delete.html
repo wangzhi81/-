@@ -1,0 +1,24 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Businesssetmeal">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="BUSINESS_SET_MEAL_ID" value="{$BusinessSetMeal.BUSINESS_SET_MEAL_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>套餐名称：</td>
+            <td>{$BusinessSetMeal.set_name}</td>
+        </tr><tr>
+            <td>套餐说明：</td>
+            <td>{$BusinessSetMeal.package_description}</td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td>{$BusinessSetMeal.display_order}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

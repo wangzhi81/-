@@ -1,0 +1,19 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>
+        <p>是否确认删除以下数据？</p>
+    </div>
+    <table class="NoBorder" id="menu_list">
+        <tr>
+            <td>
+                菜单名称：</td><td><span id="MENU_NAME"></span>
+                <input type="hidden" id="MENU_LIST_ID" value="{$MENU_LIST_ID}">
+            </td>
+        </tr>
+        <tr><td>菜单图标：</td><td><span id="MENU_ICON"></span></td></tr>
+        <tr><td>对应URL：</td><td><span id="CORRESPONDING_URL"></span></td></tr>
+        <tr><td>显示顺序：</td><td><span id="DISPLAY_ORDER"></span></td></tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="DelData">确认删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

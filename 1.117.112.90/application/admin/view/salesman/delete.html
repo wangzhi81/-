@@ -1,0 +1,21 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Salesman">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="SALESMAN_ID" value="{$Salesman.SALESMAN_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td>{$Salesman.FULL_NAME}</td>
+        </tr><tr>
+            <td>手机号码：</td>
+            <td>{$Salesman.PHONE_NUMBER}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

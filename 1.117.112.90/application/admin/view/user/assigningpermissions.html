@@ -1,0 +1,20 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="NoBorder" id="user_list">
+        <tr>
+            <td>头像：</td><td>{$UserList.HEAD_PORTRAIT}<input type="hidden" id="USER_LIST_ID" value="{$UserList.USER_LIST_ID}"></td>
+        </tr>
+        <tr><td>昵称：</td><td>{$UserList.NICKNAME}</td></tr>
+        <tr><td>性别：</td><td>{$UserList.GENDER}</td></tr>
+        <tr><td>省份：</td><td>{$UserList.PROVINCE}</td></tr>
+        <tr><td>城市：</td><td>{$UserList.CITY}</td></tr>
+        <tr><td>角色：</td><td>
+            <select id="ROLE" val="{$UserList.ROLE}">
+                <option value="游客">游客</option>
+                <option value="超级管理员">超级管理员</option>
+            </select>
+        </td></tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveData">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

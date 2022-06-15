@@ -1,0 +1,20 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Userrightsallocationtable">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="USER_RIGHTS_ALLOCATION_TABLE_ID" value="{$UserRightsAllocationTable.USER_RIGHTS_ALLOCATION_TABLE_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>角色：</td>
+            <td><input type="text" id="role" value="{$UserRightsAllocationTable.role}"></td>
+        </tr><tr>
+            <td>菜单ID：</td>
+            <td><input type="text" id="menu_id" value="{$UserRightsAllocationTable.menu_id}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

@@ -1,0 +1,41 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Salesman">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="SALESMAN_ID" value="{$Salesman.SALESMAN_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" id="FULL_NAME" value="{$Salesman.FULL_NAME}"></td>
+        </tr><tr>
+            <td>手机号码：</td>
+            <td><input type="text" id="PHONE_NUMBER" value="{$Salesman.PHONE_NUMBER}"></td>
+        </tr><tr>
+            <td>openid：</td>
+            <td><input type="text" id="openid" value="{$Salesman.openid}"></td>
+        </tr><tr>
+            <td>登记时间：</td>
+            <td><input type="text" id="registration_time" value="{$Salesman.registration_time}"></td>
+        </tr><tr>
+            <td>绑定时间：</td>
+            <td><input type="text" id="binding_time" value="{$Salesman.binding_time}"></td>
+        </tr><tr>
+            <td>头像：</td>
+            <td><input type="text" id="head_portrait" value="{$Salesman.head_portrait}"></td>
+        </tr><tr>
+            <td>验证码：</td>
+            <td><input type="text" id="verification_code" value="{$Salesman.verification_code}"></td>
+        </tr><tr>
+            <td>所属营业厅：</td>
+            <td><input type="text" id="affiliated_business_hall" value="{$Salesman.affiliated_business_hall}"></td>
+        </tr><tr>
+            <td>担任职务：</td>
+            <td><input type="text" id="serve_as_a_post" value="{$Salesman.serve_as_a_post}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

@@ -1,0 +1,63 @@
+hr{
+    margin:10px 0px;
+}
+.kuang1{
+    background-color:#EAEDF1;
+    padding:20px;
+}
+.kuang2{
+    background-color:#f9fafc;
+    padding:20px;
+}
+.kuang3{
+    background-color:#FFF;
+    padding:20px;
+}
+.kuang4{
+    text-align:right;margin-top:10px;
+}
+.kuang5{
+    margin:10px 0px;
+}
+.span1{
+    font-size:30px;
+}
+.span2{
+    font-size:12px;
+    color:#888;
+}
+.span3{
+    margin-left:20px;
+}
+.span4{
+    font-weight:bold;
+}
+.span5{
+    border:1px solid #999;
+    font-size:12px;
+    color:#888;
+    padding:0px 3px;
+    background-color:#eee;
+}
+.span6{
+    margin-left:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+.span7{
+    margin:0px 10px;
+    font-size:12px;
+}
+.jiange{
+    padding-left:5px;padding-right:5px;
+}
+.shuzi{
+    padding-left:5px;padding-right:5px;
+}
+.shuzi2{
+    padding-left:5px;padding-right:5px;
+    font-size:18px;
+}
+.jiange2{
+    margin-top:20px;
+}

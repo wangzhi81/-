@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css?v=0.1" />
+        <link rel="stylesheet" type="text/css" href="/static/css/loading.css?v=0.3" />
+        <link rel="stylesheet" type="text/css" href="/static/css/weixin/registration.css?v=0.9" />
+        <title>开户</title>
+    </head>
+    <body>
+        <div class="MainDiv" id="MainDiv">
+            <div class="ReturnReasons">
+                <p>退回原因：</p>
+                <p style="margin-left:20px">{$Order.reasons_for_return}</p>
+                <input type="hidden" id="BROADBAND_ORDERS_ID" value="{$Order.BROADBAND_ORDERS_ID}">
+            </div>
+            <div class="form-group">
+                <label>主号姓名：</label>
+                <input class="form-control IsNotNull" placeholder="请输入主号姓名" type="text" id="master_name" value="{$Order.master_name}">
+            </div>
+            <div class="form-group">
+                <label>手机号（多个号请用，分开）：</label>
+                <input class="form-control IsNotNull" placeholder="请输入手机号" type="text" id="phone_number" value="{$Order.phone_number}">
+            </div>
+            <div class="form-group">
+                <label>接入地址：</label>
+                <input class="form-control IsNotNull" placeholder="请输入接入地址" type="text" id="access_address" value="{$Order.access_address}">
+            </div>
+            <div class="form-group">
+                <label>套餐选择：</label>
+                <select class="form-control" id="PackagesClassification"></select>
+                <select class="form-control IsNotNull" id="package_name" val="{$Order.package_name}"></select>
+            </div>
+            <div class="form-group">
+                <table width="100%">
+                    <tr>
+                        <td style="width:150px"><label id="access_mode" value="{$Order.access_mode}">接入方式：</label></td>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td align="right"><input type="checkbox" id="FTTH" checked="checked"></td><td>&nbsp;FTTH</td>
+                                    <td align="right"><input type="checkbox" id="FTTB"></td><td>&nbsp;FTTB</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <label>身份证照片：</label>
+                <table width="100%">
+                    <tr>
+                        <td class="text-center" valign="middle" style="width:50%">
+                            <div class="IdPhotos" id="front_of_id_card" serverId=""><img src="{$Order.front_of_id_card}" class="img-responsive img-rounded" style="width:100%" alt="Responsive image"></div>
+                        </td>
+                        <td class="text-center">
+                            <div class="IdPhotos" id="reverse_of_id_card" serverId=""><img src="{$Order.reverse_of_id_card}" class="img-responsive img-rounded" style="width:100%" alt="Responsive image"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <label>备注：</label>
+                <textarea class="form-control" id='remarks'>{$Order.remarks}</textarea>
+            </div>
+            <button type="button" class="btn btn-success btn-lg btn-block" id="Submit">提交</button>
+        </div>
+        <script data-main="/static/js/weixin/resubmit.js?v=18" src="/static/js/require.min.js"></script>
+    </body>
+</html>

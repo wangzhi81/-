@@ -1,0 +1,33 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Broadbandperformance">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="BROADBAND_PERFORMANCE_ID" value="{$BroadbandPerformance.BROADBAND_PERFORMANCE_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>openid：</td>
+            <td>{$BroadbandPerformance.openid}</td>
+        </tr><tr>
+            <td>业绩：</td>
+            <td>{$BroadbandPerformance.achievement}</td>
+        </tr><tr>
+            <td>业绩类别：</td>
+            <td>{$BroadbandPerformance.performance_category}</td>
+        </tr><tr>
+            <td>绩效时间：</td>
+            <td>{$BroadbandPerformance.performance_time}</td>
+        </tr><tr>
+            <td>订单ID：</td>
+            <td>{$BroadbandPerformance.order_id}</td>
+        </tr><tr>
+            <td>套餐名称：</td>
+            <td>{$BroadbandPerformance.package_name}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

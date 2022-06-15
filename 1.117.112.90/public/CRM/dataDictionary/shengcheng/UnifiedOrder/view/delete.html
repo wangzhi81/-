@@ -1,0 +1,39 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Unifiedorder">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="UNIFIED_ORDER_ID" value="{$UnifiedOrder.UNIFIED_ORDER_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>商品ID：</td>
+            <td>{$UnifiedOrder.commodity_id}</td>
+        </tr><tr>
+            <td>客户ID：</td>
+            <td>{$UnifiedOrder.customer_id}</td>
+        </tr><tr>
+            <td>订单ID：</td>
+            <td>{$UnifiedOrder.order_id}</td>
+        </tr><tr>
+            <td>是否支付：</td>
+            <td>{$UnifiedOrder.pay_or_not}</td>
+        </tr><tr>
+            <td>买家留言：</td>
+            <td>{$UnifiedOrder.buyer_message}</td>
+        </tr><tr>
+            <td>商品数量：</td>
+            <td>{$UnifiedOrder.quantity_of_goods}</td>
+        </tr><tr>
+            <td>商品金额：</td>
+            <td>{$UnifiedOrder.commodity_amount}</td>
+        </tr><tr>
+            <td>运费金额：</td>
+            <td>{$UnifiedOrder.freight_amount}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

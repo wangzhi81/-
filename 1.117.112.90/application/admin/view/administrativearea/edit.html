@@ -1,0 +1,20 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Administrativearea">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="ADMINISTRATIVE_AREA_ID" value="{$AdministrativeArea.ADMINISTRATIVE_AREA_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>行政区：</td>
+            <td><input type="text" id="administrative_area" value="{$AdministrativeArea.administrative_area}"></td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td><input type="text" id="display_order" value="{$AdministrativeArea.display_order}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

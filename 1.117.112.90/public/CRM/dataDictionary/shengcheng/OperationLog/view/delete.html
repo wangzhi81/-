@@ -1,0 +1,30 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Operationlog">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="OPERATION_LOG_ID" value="{$OperationLog.OPERATION_LOG_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>openid：</td>
+            <td>{$OperationLog.OPENID}</td>
+        </tr><tr>
+            <td>操作时间：</td>
+            <td>{$OperationLog.OPERATING_TIME}</td>
+        </tr><tr>
+            <td>操作内容：</td>
+            <td>{$OperationLog.OPERATION_CONTENT}</td>
+        </tr><tr>
+            <td>辅助信息：</td>
+            <td>{$OperationLog.AUXILIARY_INFORMATION}</td>
+        </tr><tr>
+            <td>关联ID：</td>
+            <td>{$OperationLog.correlation_id}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

@@ -1,0 +1,24 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Housekeepingserviceclassification">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="HOUSEKEEPING_SERVICE_CLASSIFICATION_ID" value="{$HousekeepingServiceClassification.HOUSEKEEPING_SERVICE_CLASSIFICATION_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>类别名称：</td>
+            <td>{$HousekeepingServiceClassification.class_name}</td>
+        </tr><tr>
+            <td>类别图标：</td>
+            <td>{$HousekeepingServiceClassification.category_icon}</td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td>{$HousekeepingServiceClassification.display_order}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

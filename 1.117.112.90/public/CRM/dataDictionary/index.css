@@ -1,0 +1,36 @@
+.td1{
+    width:180px;background-color:#EAEDF1;
+}
+.div1{
+    background-color:#D9DEE4;
+    padding:25px;
+}
+.div2{
+    background-color:#EAEDF1;
+    padding:10px 10px 10px 40px;
+    cursor:pointer;
+}
+.div2:hover{
+    background-color:#F4F6F8;
+}
+.div2selected{
+    background-color:#FFF;
+}
+.div2selected:hover{
+    background-color:#FFF;
+}
+.span1{
+    font-weight:bold;
+    font-size:12px;
+}
+.span2{
+    font-size:12px;
+}
+#huadong{
+    position:absolute;
+    top:10px;
+    left:165px;
+    cursor:pointer;
+    background-color:#F4F6F8;
+    padding:5px 0px;
+}

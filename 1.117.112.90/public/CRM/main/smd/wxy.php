@@ -1,0 +1,79 @@
+<?php
+?>
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>危险源</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body{
+            font-family:'微软雅黑' !important;
+        }
+        
+     </style>
+  </head>
+  <body>
+        <div class="panel panel-default">
+          <div class="panel-heading">危险源管理</div>
+          <div class="panel-body">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <table width="100%">
+                    <tr>
+                        <td width="100px">危险源名称：</td>
+                        <td width="200px"><input class="form-control"></td>
+                        <td width="120px"><span style="margin-left: 10px;">环境风险等级：</span></td>
+                        <td width="200px">
+                            <select class="form-control">
+                                <option>所有</option>
+                                <option>一般风险源</option>
+                                <option>较大风险源</option>
+                                <option>重大风险源</option>
+                            </select>
+                        </td>
+                        <td align="right">
+                            <button type="button" class="btn btn-primary">查询</button>
+                        </td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+            <table class="table table-bordered">
+              <tr>
+                  <th>序号</th>
+                  <th>危险源编码</th>
+                  <th>危险源名称</th>
+                  <th>企业地址</th>
+                  <th>环境风险等级</th>
+                  <th>联系电话</th>
+                  <th>操作</th>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>WXY001</td>
+                  <td>大化集团有限责任公司</td>
+                  <td>大连市甘井子区金西路10号</td>
+                  <td>一般风险源</td>
+                  <td>0411-86893688</td>
+                  <td><a href="wxyxq.php" style="cursor:pointer;">详情</a></td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>WXY002</td>
+                  <td>大连远达科技发展有限公司</td>
+                  <td>大连市甘井子区华北路196号</td>
+                  <td>一般风险源</td>
+                  <td>0411-85187477</td>
+                  <td><a style="cursor:pointer;">详情</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+  </body>
+</html>

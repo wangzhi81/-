@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/loading.css?v=0.3" />
+        <link rel="stylesheet" type="text/css" href="/static/css/businesslist.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/weixin/bottom/zhuce.css" />
+        <title>底商注册</title>
+    </head>
+    
+    <body>
+        <div style="padding:10px">
+            <table width="100%">
+                <tr><td style="width:80px">底商名称：</td><td><input id="name_of_the_merchant" type="text" class="form-control input1" value="{$deshang_information.name_of_the_merchant}"></td></tr>
+                <tr><td>地址：</td><td><input id="business_address" type="text" class="form-control input1" value="{$deshang_information.business_address}"></td></tr>
+                <tr><td>手机号码：</td>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td><input type="text" class="form-control input1" value="{$deshang_information.contact_number}" id="contact_number"></td>
+                                <td style="width:10px"></td>
+                                <td><button type="button" class="btn btn-success btn-sm" id="sendsms">发送验证码</button></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td>验证码：</td><td><input type="text" class="form-control input1" id="verification_code"></td></tr>
+            </table>
+        </div>
+        <div style="padding:10px">
+            <button type="button" class="btn btn-success btn-lg btn-block" id="zhuceb">注册</button>
+        </div>
+        <input type="hidden" value="{$openid}" id="openid">
+        <input type="hidden" value="{$salesperson_openid}" id="salesperson_openid">
+        <script data-main="/static/js/weixin/Bottom/zhuce.js?v=3" src="/static/js/require.min.js"></script>
+    </body>
+</html>

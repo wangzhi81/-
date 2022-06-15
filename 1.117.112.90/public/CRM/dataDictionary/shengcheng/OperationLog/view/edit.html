@@ -1,0 +1,29 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Operationlog">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="OPERATION_LOG_ID" value="{$OperationLog.OPERATION_LOG_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>openid：</td>
+            <td><input type="text" id="OPENID" value="{$OperationLog.OPENID}"></td>
+        </tr><tr>
+            <td>操作时间：</td>
+            <td><input type="text" id="OPERATING_TIME" value="{$OperationLog.OPERATING_TIME}"></td>
+        </tr><tr>
+            <td>操作内容：</td>
+            <td><input type="text" id="OPERATION_CONTENT" value="{$OperationLog.OPERATION_CONTENT}"></td>
+        </tr><tr>
+            <td>辅助信息：</td>
+            <td><input type="text" id="AUXILIARY_INFORMATION" value="{$OperationLog.AUXILIARY_INFORMATION}"></td>
+        </tr><tr>
+            <td>关联ID：</td>
+            <td><input type="text" id="correlation_id" value="{$OperationLog.correlation_id}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

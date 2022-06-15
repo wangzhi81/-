@@ -1,0 +1,27 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <div>是否确认删除以下数据？</div>
+    <table class="FormTable" id="Finalperformancecoefficient">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="FINAL_PERFORMANCE_COEFFICIENT_ID" value="{$FinalPerformanceCoefficient.FINAL_PERFORMANCE_COEFFICIENT_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>区间最小值：</td>
+            <td>{$FinalPerformanceCoefficient.interval_minimum}</td>
+        </tr><tr>
+            <td>区间最大值：</td>
+            <td>{$FinalPerformanceCoefficient.interval_maximum}</td>
+        </tr><tr>
+            <td>绩效系数：</td>
+            <td>{$FinalPerformanceCoefficient.performance_coefficient}</td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td>{$FinalPerformanceCoefficient.display_order}</td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="Delete">删除</div><div class="Button" id="Cancellation">取消</div>
+    </div>

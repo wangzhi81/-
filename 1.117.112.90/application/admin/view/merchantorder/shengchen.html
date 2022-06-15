@@ -1,0 +1,43 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <input type="hidden" id="MERCHANT_ORDER_ID" value="{$id}">
+    <input type="hidden" id="openid" value="{$MerchantOrder.openid}">
+    <input type="hidden" id="order_time" value="{$MerchantOrder.order_time}">
+    <table class="FormTable" id="BroadbandOrders">
+        <tr>
+            <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>手机号码：</td>
+            <td><input type="text" id="phone_number" value="{$MerchantOrder.phone_number}" readonly></td>
+        </tr><tr>
+            <td>主号姓名：</td>
+            <td><input type="text" id="master_name" value="{$MerchantOrder.full_name}" readonly></td>
+        </tr><tr>
+            <td>接入地址：</td>
+            <td><input type="text" id="access_address" value="{$MerchantOrder.address}" readonly></td>
+        </tr><tr>
+            <td>意向套餐：</td>
+            <td>{$MerchantOrder.package_information}</td>
+        </tr><tr>
+            <td>套餐：</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <select id="BroadbandPackageClassification"></select>
+                        </td>
+                        <td>
+                            <select id="package_name"></select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr><tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveData">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

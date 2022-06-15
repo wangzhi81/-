@@ -1,0 +1,38 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Unifiedorder">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="UNIFIED_ORDER_ID" value="{$UnifiedOrder.UNIFIED_ORDER_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>商品ID：</td>
+            <td><input type="text" id="commodity_id" value="{$UnifiedOrder.commodity_id}"></td>
+        </tr><tr>
+            <td>客户ID：</td>
+            <td><input type="text" id="customer_id" value="{$UnifiedOrder.customer_id}"></td>
+        </tr><tr>
+            <td>订单ID：</td>
+            <td><input type="text" id="order_id" value="{$UnifiedOrder.order_id}"></td>
+        </tr><tr>
+            <td>是否支付：</td>
+            <td><input type="text" id="pay_or_not" value="{$UnifiedOrder.pay_or_not}"></td>
+        </tr><tr>
+            <td>买家留言：</td>
+            <td><input type="text" id="buyer_message" value="{$UnifiedOrder.buyer_message}"></td>
+        </tr><tr>
+            <td>商品数量：</td>
+            <td><input type="text" id="quantity_of_goods" value="{$UnifiedOrder.quantity_of_goods}"></td>
+        </tr><tr>
+            <td>商品金额：</td>
+            <td><input type="text" id="commodity_amount" value="{$UnifiedOrder.commodity_amount}"></td>
+        </tr><tr>
+            <td>运费金额：</td>
+            <td><input type="text" id="freight_amount" value="{$UnifiedOrder.freight_amount}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

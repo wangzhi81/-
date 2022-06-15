@@ -1,0 +1,26 @@
+    <input type="hidden" id="SecondTitleInput" value="{$SecondTitle}">
+    <input type="hidden" id="ScriptFragment" value="{$ScriptFragment}">
+    <table class="FormTable" id="Parametersetting">
+        <tr>
+            <td></td>
+            <td>
+                <input type="hidden" id="PARAMETER_SETTING_ID" value="{$ParameterSetting.PARAMETER_SETTING_ID}">
+            </td>
+        </tr>
+        <tr>
+            <td>参数名称：</td>
+            <td><input type="text" id="parameter_name" value="{$ParameterSetting.parameter_name}"></td>
+        </tr><tr>
+            <td>参数值：</td>
+            <td><input type="text" id="parameter_values" value="{$ParameterSetting.parameter_values}"></td>
+        </tr><tr>
+            <td>参数说明：</td>
+            <td><input type="text" id="parameter_description" value="{$ParameterSetting.parameter_description}"></td>
+        </tr><tr>
+            <td>显示顺序：</td>
+            <td><input type="text" id="display_order" value="{$ParameterSetting.display_order}"></td>
+        </tr>
+    </table>
+    <div class="BottomButtons">
+        <div class="Button" id="SaveEdit">保存</div><div class="Button" id="Cancellation">取消</div>
+    </div>

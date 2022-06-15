@@ -1,0 +1,80 @@
+<table width="100%">
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td style="width:100px" align="right">
+                        开户人：
+                    </td>
+                    <td style="width:200px">
+                        <input type="text" class="form-control QueryCriteria" id="full_name">
+                    </td>
+                    <td style="width:100px" align="right">
+                        手机号：
+                    </td>
+                    <td style="width:200px">
+                        <input type="text" class="form-control QueryCriteria" id="phone_number">
+                    </td>
+                    <td style="width:100px" align="right">
+                        姓名：
+                    </td>
+                    <td style="width:200px">
+                        <input type="text" class="form-control QueryCriteria" id="master_name">
+                    </td>
+                </tr>
+            </table>
+            <table style="margin-top:10px">
+                <tr>
+                    <td style="width:100px" align="right">
+                        绩效时间：
+                    </td>
+                    <td style="width:200px">
+                        <table><tr><td>
+                            <div class='input-group date' style="width:150px" id='performance_time_min_div'>  
+                                <input type='text' class="form-control QueryCriteria" id="performance_time_min" data-date-format="yyyy-mm-dd" readonly="readonly" style="background-color:#FFF"/>  
+                                <span class="input-group-addon">  
+                                    <span class="glyphicon glyphicon-calendar"></span>  
+                                </span>  
+                            </div>
+                        </td><td>-</td><td>
+                            <div class='input-group date' style="width:150px" id='performance_time_max_div'>  
+                                <input type='text' class="form-control QueryCriteria" id="performance_time_max" data-date-format="yyyy-mm-dd" readonly="readonly" style="background-color:#FFF"/>  
+                                <span class="input-group-addon">  
+                                    <span class="glyphicon glyphicon-calendar"></span>  
+                                </span>  
+                            </div>
+                        </td></tr></table>
+                    </td>
+                    {eq name="serve_as_a_post" value="营业厅经理"}
+                        
+                    {else/}
+                        {eq name="serve_as_a_post" value="营业厅文员"}
+                        
+                        {else/}
+                            <td style="width:100px" align="right">
+                                营业厅：
+                            </td>
+                            <td style="width:200px">
+                                <select class="form-control QueryCriteria" id="affiliated_business_hall">
+                                    
+                                </select>
+                            </td>
+                        {/eq}
+                    {/eq}
+                    <td style="width:100px" align="right">
+                        职务：
+                    </td>
+                    <td style="width:200px">
+                        <select id="JobInformation" class="form-control QueryCriteria"></select>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td align="right">
+            <button type="button" class="btn btn-primary" id="Inquire">查询</button>
+            <button type="button" class="btn btn-primary" id="Export">导出</button>
+        </td>
+    </tr>
+</table>
+
+
